@@ -1,11 +1,12 @@
-import { Text, View } from "react-native";
+import { View } from "react-native";
+import { Task } from "../../components/Task";
+
+import { styles } from './styles';
 
 export function Home() {
   return (
-    <View>
-      <Text>
-        Hello World!
-      </Text>
+    <View style={styles.container}>
+      <Task />
     </View>
   )
-}
+} 
