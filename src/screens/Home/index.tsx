@@ -6,7 +6,6 @@ import { styles } from './styles';
 export function Home() {
   function handleTaskAdd() {
     console.log('Add');
-
   }
 
   return (
@@ -31,7 +30,6 @@ export function Home() {
           />
         </TouchableOpacity>
       </View>
-
       {/* <Task /> */}
     </View>
   )
