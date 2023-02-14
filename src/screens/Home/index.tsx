@@ -4,6 +4,9 @@ import { Task } from "../../components/Task";
 import { styles } from './styles';
 
 export function Home() {
+  let taskCreated = 5
+  let taskConcluded = 2 
+
   function handleTaskAdd() {
     console.log('Add');
   }
@@ -29,6 +32,26 @@ export function Home() {
             source={require('../../../assets/plus.png')}
           />
         </TouchableOpacity>
+      </View>
+      <View style={styles.tasksContainer}>
+        <View style={styles.textInfo}>
+          <View style={styles.tasksInfoContainer}>
+            <Text style={styles.tasksCreated}>Criadas</Text>
+            <Text style={styles.tasksInfoNumber}>{taskCreated}</Text>
+          </View>
+          <View style={styles.tasksInfoContainer}>
+            <Text style={styles.tasksConcluded}>Concluídas</Text>
+            <Text style={styles.tasksInfoNumber}>{taskConcluded}</Text>
+          </View>
+        </View>
+        <View style={styles.taskEmpty}>
+          <Image
+            style={styles.taskEmptyIcon}
+            source={require('../../../assets/clipboard.png')}
+          />
+          <Text style={styles.taskEmptyTextTitle}>Você ainda não tem tarefas cadastradas</Text>
+          <Text style={styles.taskEmptyTextSubtitle}>Crie tarefas e organize seus itens a fazer</Text>
+        </View>
       </View>
       {/* <Task /> */}
     </View>

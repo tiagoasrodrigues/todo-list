@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet, TextBase } from "react-native";
 
 
 export const styles = StyleSheet.create({
@@ -51,6 +51,79 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
     width: '100%',
     marginTop: -26,
-    marginBottom: 32
+    marginBottom: 8
+  },
+
+  tasksContainer: {
+    margin: 24,
+    alignItems: 'center',
+  },
+
+  textInfo: {
+    flexDirection: 'row',
+    width: '100%',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+
+  tasksInfoContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+
+  tasksCreated: {
+    color: '#4ea8de',
+    fontSize: 14,
+    fontWeight: 'bold'
+  },
+
+  tasksInfoNumber: {
+    backgroundColor: '#333333',
+    color: '#d9d9d9',
+
+    marginLeft: 8,
+    height: 18,
+    width: 28,
+
+    borderRadius: 10,
+
+    textAlign: 'center',
+    fontSize: 12,
+    fontWeight: 'bold'
+  },
+
+  tasksConcluded: {
+    color: '#8284fa',
+
+    fontSize: 14,
+    fontWeight: 'bold'
+  },
+
+  taskEmpty: {
+    height: 200,
+    width: '100%',
+    marginTop: 20,
+
+    alignItems: 'center',
+    justifyContent: 'center',
+
+    borderTopColor: '#333333',
+    borderTopWidth: 1
+  },
+
+  taskEmptyIcon: {
+    marginBottom: 16
+  },
+
+  taskEmptyTextTitle: {
+    color: '#808080',
+    fontSize: 14,
+    fontWeight: 'bold'
+  },
+
+  taskEmptyTextSubtitle: {
+    color: '#808080',
+    fontSize: 14,
   }
 });
