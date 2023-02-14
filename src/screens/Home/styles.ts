@@ -3,59 +3,30 @@ import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
   container: {
+    backgroundColor: '#1a1a1a',
+
     flex: 1,
-    backgroundColor: '#131016',
-    padding: 24
   },
 
-  eventName: {
-    color: '#FFF',
-    fontSize: 24,
-    fontWeight: 'bold',
-    marginTop: 48
-  },
+  appTitle: {
+    backgroundColor: '#0d0d0d',
 
-  eventDate: {
-    color: '#6B6B6B',
-    fontSize: 16,
-    marginTop: 7
+    height: 173,
+    color: '#4ea8de',
+    textAlign: 'center',
+    paddingTop: 52
   },
 
   input: {
-    flex: 1,
-    height: 56,
-    marginRight: 12,
-    backgroundColor: '#1F1E25',
-    borderRadius: 5,
-    color: '#FFF',
+    backgroundColor: '#262626',
+    marginTop: -26,
+    marginLeft: 24,
+    marginRight: 24,
     padding: 16,
+    height: 54,
+    borderRadius: 6,
+
+    color: '#f2f2f2',
     fontSize: 16
-  },
-
-  button: {
-    width: 56,
-    height: 56,
-    borderRadius: 5,
-    backgroundColor: '#31CF67',
-    alignItems: 'center',
-    justifyContent: 'center'
-  },
-
-  buttonText: {
-    color: '#FFF',
-    fontSize: 24,
-  },
-
-  form: {
-    flexDirection: 'row',
-    width: '100%',
-    marginTop: 36,
-    marginBottom: 42
-  },
-
-  listEmptyText: {
-    color: '#FFF',
-    fontSize: 14,
-    textAlign: 'center'
   }
 });
