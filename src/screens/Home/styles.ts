@@ -64,6 +64,7 @@ export const styles = StyleSheet.create({
     width: '100%',
     alignItems: 'center',
     justifyContent: 'space-between',
+    marginBottom: 20
   },
 
   tasksInfoContainer: {
@@ -97,7 +98,7 @@ export const styles = StyleSheet.create({
     color: '#8284fa',
 
     fontSize: 14,
-    fontWeight: 'bold'
+    fontWeight: 'bold' 
   },
 
   taskEmpty: {

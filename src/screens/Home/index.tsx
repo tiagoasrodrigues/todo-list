@@ -5,7 +5,7 @@ import { styles } from './styles';
 
 export function Home() {
   let taskCreated = 5
-  let taskConcluded = 2 
+  let taskConcluded = 2
 
   function handleTaskAdd() {
     console.log('Add');
@@ -44,16 +44,20 @@ export function Home() {
             <Text style={styles.tasksInfoNumber}>{taskConcluded}</Text>
           </View>
         </View>
-        <View style={styles.taskEmpty}>
+        {/* <View style={styles.taskEmpty}>
           <Image
             style={styles.taskEmptyIcon}
             source={require('../../../assets/clipboard.png')}
           />
           <Text style={styles.taskEmptyTextTitle}>Você ainda não tem tarefas cadastradas</Text>
           <Text style={styles.taskEmptyTextSubtitle}>Crie tarefas e organize seus itens a fazer</Text>
-        </View>
+        </View> */}
+        <Task />
+        <Task />
+        <Task />
+        <Task />
+        <Task />
       </View>
-      {/* <Task /> */}
     </View>
   )
 }
