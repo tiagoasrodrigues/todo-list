@@ -4,24 +4,49 @@ import { DeleteButton } from "../DeleteButton";
 
 import { styles } from './styles';
 
-export function Task() {
-  let task = 'Integer urna interdum massa libero auctor neque turpis turpis semper.'
+type TaskProps = {
+  task: string;
+}
 
-  function handleTask() {
-    console.log('Conclui uma task 💕');
-  }
+const onConcluded = false
 
+function handleTask() {
+  console.log('Conclui uma task 💕');
+}
+
+export function Task({ task }: TaskProps) {
   return (
     <View style={styles.container}>
-      <TouchableOpacity style={styles.taskCheckbox} onPress={handleTask}>
-        <Checkbox />
+      <View style={styles.taskCheckbox}>
+        <Checkbox isChecked={false} />
 
-        <Text style={styles.taskName}>
+        <Text style={styles.task}>
           {task}
         </Text>
-      </TouchableOpacity>
-
-      <DeleteButton />
+        <DeleteButton />
+      </View>
     </View>
   )
 }
+
+{/* <TouchableOpacity style={styles.taskCheckbox} onPress={handleTask} >
+        {!onConcluded
+          ?
+          <>
+            <Checkbox isChecked={false} />
+
+            <Text style={styles.taskName}>
+              {task}
+            </Text>
+          </>
+          :
+          <>
+            <Checkbox isChecked={true} />
+
+            <Text style={styles.taskConcluded}>
+              {task}
+            </Text>
+          </>
+        }
+        <DeleteButton />
+      </TouchableOpacity> */}

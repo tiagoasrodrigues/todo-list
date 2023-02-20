@@ -3,20 +3,19 @@ import { StyleSheet } from "react-native";
 export const styles = StyleSheet.create({
   container: {
     backgroundColor: '#262626',
-    height: 64,
-    marginLeft: 24,
-    marginRight: 24,
+    width: '100%',
     marginBottom: 8,
     borderRadius: 4,
     flexDirection: 'row',
     alignItems: 'center',
+    justifyContent: 'center',
   },
 
   taskCheckbox: {
     flexDirection: 'row',
   },
 
-  taskName: {
+  task: {
     color: "#f2f2f2",
     flex: 1,
     fontSize: 14,

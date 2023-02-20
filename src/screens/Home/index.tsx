@@ -1,4 +1,4 @@
-import { View } from "react-native";
+import { View, ScrollView } from "react-native";
 
 import { CreateButton } from "../../components/CreateButton";
 import { Input } from "../../components/Input";
@@ -9,6 +9,10 @@ import { TaskInfo } from "../../components/TaskInfo";
 import { styles } from './styles';
 
 export function Home() {
+  const tasks = [
+    'auctor nequiss e liberoro auctor noliberoro auctor no liberoro auctor no', 'Integer urna interdum massa libero auctor neque turpis', 'Integer urna interdum massa libero auctor neque turpis turpis semper.', 'Acordar', 'Cantar', 'Trabalhar', 'Descançar', 'Treinar', 'Comer', 'Desenhar', 'Praticar'
+  ]
+
   return (
     <View style={styles.container}>
       <Logo />
@@ -19,11 +23,17 @@ export function Home() {
       </View>
       <View style={styles.tasksContainer}>
         <TaskInfo />
-        <Task />
-        <Task />
-        <Task />
-        <Task />
-        <Task />
+        <ScrollView>
+          {
+            tasks.map(task => (
+              <Task
+                key={task}
+                task={task}
+              />
+            ))
+          }
+        </ScrollView>
+
 
         {/* <View style={styles.taskEmpty}>
           <Image

@@ -17,6 +17,7 @@ export const styles = StyleSheet.create({
   tasksContainer: {
     margin: 24,
     alignItems: 'center',
+    height: '70%',
   },
 
   taskEmpty: {

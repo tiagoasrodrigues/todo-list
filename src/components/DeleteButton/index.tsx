@@ -2,13 +2,13 @@ import { TouchableOpacity, Image } from 'react-native';
 
 import { styles } from "./styles";
 
-export function DeleteButton() {
-  function handleTaskAdd() {
-    console.log('Deletei uma task 😁');
-  }
+function handleTaskRemove(task: string) {
+  console.log(`Deletei a task ${task} 😁`);
+}
 
+export function DeleteButton() {
   return (
-    <TouchableOpacity style={styles.container} onPress={handleTaskAdd}>
+    <TouchableOpacity style={styles.container} onPress={() => handleTaskRemove('Antiga')}>
       <Image
         source={require('../../../assets/trash.png')}
       />
