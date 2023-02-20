@@ -25,6 +25,7 @@ export function Home() {
           placeholder="Adicione uma nova tarefa"
           placeholderTextColor={'#808080'}
           keyboardType="default"
+          selectionColor={"#f2f2f2"}
         />
 
         <TouchableOpacity style={styles.button} onPress={handleTaskAdd}>
